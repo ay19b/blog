@@ -1,0 +1,141 @@
+header{
+    margin-bottom: 1.5rem;
+}
+nav:nth-of-type(2){
+    background-color: var(--header-bg);
+ }
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.content ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 4px 0;
+}
+
+ .content ul li h5{
+    font-weight: inherit;
+    cursor: pointer;
+    margin-right: 18px;
+ }
+ .content ul li h5:hover{
+    color: var(--orange);
+ }
+ .content ul li svg{
+    cursor: pointer;
+    margin-left: 18px;
+ }
+ .content ul li svg:hover{
+    color: var(--orange);
+ }
+.content .btn{
+    background-color: #2b2b2f;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+.content .btn:hover{
+    color: var(--orange);
+}
+.content ul img{
+    width: 11rem;
+    margin-right: 2rem;
+    padding: 8px 0;
+    cursor: pointer;
+}
+.content ul li h4{
+    cursor: pointer;
+    margin-right: 18px;
+    font-size: 14px;
+ }
+ .content ul li h4:hover{
+    color: var(--orange);
+ }
+ .content input{
+	 display: flex;
+     font-size: 19px;
+     padding: 25px 14px 24px 0;
+     width: 100%;
+     background-color: transparent;
+     border: none;
+     color: white;
+     outline: none;
+ }
+ .content .partMenu{
+	 display: none;
+     align-items: center;
+ }
+ .content .partMenu svg{
+	 color: white;
+     font-size: 1.5rem;
+	 margin-right: 2rem;
+	 cursor: pointer;
+ }
+ .content .partMenu svg:hover{
+    color: var(--orange);
+}
+ .content .partMenu img{
+	 width: 12rem;
+ }
+ .content ul .topListnav svg{
+	 display:none;
+ }
+ 
+ 
+ 
+@media only screen and (max-width: 900px) {
+	header nav:nth-of-type(1){
+		display:none;
+	}
+	.content{
+		padding: 3px;
+	}
+	.content .partMenu{
+	 display: flex;
+ }
+  .content ul{
+	  position: absolute;
+      background-color: #16161a;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      top: 0;
+	  left: 0%;
+	  width: 19rem;
+      height: 100%;
+      z-index: 100;
+	  transition: left 1s;
+  }
+  .content ul.close{
+	  left: -100%;
+  }
+  .content ul .topListnav{
+	  width: 100%;
+      background-color: #202024;
+      margin-top: -4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+	  margin-bottom: 28px;
+  }
+  .content ul .topListnav svg {
+    display: block;
+	font-size: 20px;
+  }
+  .content ul img{
+	 margin-top: -5px;
+     margin-bottom: -5px;
+  }
+  .content ul li h4{
+	  margin-left: 22px;
+      margin-bottom: 32px;
+  }
+  .content input{
+	  padding: 12px 14px 13px 0;
+  }
+}

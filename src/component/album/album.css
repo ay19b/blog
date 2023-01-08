@@ -1,0 +1,79 @@
+section{
+    margin-bottom: 1.5rem;
+}
+.imageAlbum{
+    padding: 20px;
+    background-color: var(--header-bg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 25rem;
+}
+.imageAlbum .leftAlbum{
+    width: 49.5%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.imageAlbum .leftAlbum:hover img,
+.imageAlbum .rightAlbum .imageAlbm:hover img{
+    transform: scale(1.03,1.03);
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0) 25%,rgba(0,0,0,0.5));
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+.overlay .contentOverlay{
+    position: absolute;
+    bottom: 0;
+    padding: 18px;
+}
+.contentOverlay span{
+    background-color: var(--orange);
+    color: white;
+    font-size: 10px;
+    padding: 4px;
+    text-transform: uppercase;
+}
+.contentOverlay h2{
+    margin: 10px 0;
+    color: white;
+}
+.contentOverlay h3{
+    margin: 10px 0;
+    color: white;
+    font-size: 16px;
+}
+.contentOverlay h5{
+    color: #bdb1b1;
+}
+.imageAlbum .leftAlbum img{
+    width: 100%;
+    height: 100%;
+}
+.imageAlbum .rightAlbum{
+    width: 49.5%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2px;
+}
+.imageAlbum .rightAlbum img{
+    width: 100%;
+    height: 100%;
+}
+.imageAlbum .rightAlbum .imageAlbm{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.imageAlbum .rightAlbum .imageAlbm:nth-of-type(1) { 
+    grid-column: 1/3;
+}
