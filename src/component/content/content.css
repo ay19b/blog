@@ -1,0 +1,12 @@
+
+
+.inf-content{
+    display: flex;
+    justify-content: space-between;
+}
+.inf-content main{
+    width: 69%;
+}
+.inf-content aside{
+    width: 29%;
+}

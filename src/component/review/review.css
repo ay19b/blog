@@ -1,0 +1,46 @@
+.review{
+    background-color: var(--header-bg);
+    padding: 20px;
+}
+.review .inf-review{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.inf-review .item-rew{
+    width: 30%;
+    margin-bottom: 27px;
+    overflow: hidden;
+}
+.item-rew .img{
+    position: relative;
+}
+
+.item-rew .img h5{
+    position: absolute;
+    bottom: 4px;
+    background-color: var(--orange);
+    color: white;
+    font-size: 11px;
+    padding: 3px;
+}
+.item-rew img{
+    width: 100%;
+    cursor: pointer;
+}
+.item-rew img:hover{
+    transform: scale(1.03,1.03);
+}
+.item-rew h4{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+.item-rew h4:hover{
+    color: var(--orange);
+}
+.item-rew span{
+    color: #aaa;
+    font-size: 13px;
+}

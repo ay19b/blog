@@ -1,0 +1,54 @@
+.popular{
+    position: relative;
+    background-color: var(--header-bg);
+    padding: 20px;
+    margin-bottom: 1.5rem;
+}
+.articl-pop{
+    position: relative;
+    margin-bottom: 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.articl-pop:hover img{
+    transform: scale(1.03,1.03);
+}
+.articl-pop img{
+    width: 100%;
+}
+.articl-pop .overlay h2{
+    font-size: 18px;
+}
+.articlAside{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.articlAside .item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.articlAside .item img{
+    width: 60%;
+    cursor: pointer;
+}
+.articlAside .item img:hover{
+    transform: scale(1.03,1.03);
+}
+.articlAside .item .itemCont{
+    margin-left: 18px;
+}
+.articlAside .item .itemCont h6{
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+.articlAside .item .itemCont h6:hover{
+    color: var(--orange)
+}
+.articlAside .itemCont span{
+    color: #aaa;
+    font-size: 12px;
+}

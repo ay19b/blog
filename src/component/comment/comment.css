@@ -1,0 +1,27 @@
+.comment{
+    position: relative;
+    background-color: var(--header-bg);
+    padding: 20px;
+    margin-bottom: 1.5rem;
+}
+.itemComment{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.itemComment img{
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.detail-comment h4{
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+.detail-comment h4:hover{
+    color:var(--orange);
+}
+.detail-comment span{
+    color: #aaa;
+    font-size: 12px;
+}

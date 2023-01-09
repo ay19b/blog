@@ -1,0 +1,17 @@
+.footer{
+    background-color: var(--header-bg);
+}
+.contentFooter{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+.categ{
+    flex: 0.33;
+}
+.post{
+    flex: 0.33;
+}
+.popularPost{
+    flex: 0.33;
+}
