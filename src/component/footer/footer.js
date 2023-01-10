@@ -93,7 +93,7 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className='line'></div>
+            <div className='Line'></div>
             <div className='bottomFooter'>
                <img src={Logo} alt='logo'/>
                <div className='about'>

@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     flex: 1;
+    height: 40rem;
 }
 .category .articlAside .item img {
     width: 45%;
