@@ -1,6 +1,7 @@
 .review{
     background-color: var(--header-bg);
     padding: 20px;
+    margin-bottom: 1.5rem;
 }
 .review .inf-review{
     display: flex;

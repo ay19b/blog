@@ -1,0 +1,18 @@
+.category{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+.category .articlAside .item img {
+    width: 45%;
+}
+.gadgets{
+    flex: 0.48;
+    background-color: var(--header-bg);
+    padding: 20px;
+}
+.laptops{
+    flex: 0.48;
+    background-color: var(--header-bg);
+    padding: 20px;
+}

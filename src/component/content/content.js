@@ -5,6 +5,7 @@ import World from '../world/world'
 import Popular from '../popular/popular'
 import "./content.css"
 import Comment from '../comment/comment'
+import Category from '../category/category'
 
 
 
@@ -16,6 +17,7 @@ export default function Content() {
               <main>
                  <World />
                  <Review />
+                 <Category />
               </main>
               <aside>
                  <SocialMedia />
