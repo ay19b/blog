@@ -43,6 +43,7 @@
 }
 .tags{
     margin-top: 20px;
+    margin-bottom: 12px;
 }
 .ListTags{
     display: flex;

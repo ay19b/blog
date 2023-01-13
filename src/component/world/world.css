@@ -35,6 +35,8 @@
 }
 .worldAside .item img{
     width: 5rem;
+    height: 3.5rem;
+    object-fit: cover;
     cursor: pointer;
 }
 .item img:hover{

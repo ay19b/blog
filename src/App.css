@@ -8,6 +8,10 @@
 *{
   margin: 0;
 }
+.App{
+  height: 100%;
+  position: relative;
+}
 body{
   background-color: var(--dark);
   font-family: 'Roboto', sans-serif;
