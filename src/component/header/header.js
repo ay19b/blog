@@ -81,11 +81,11 @@ export default function Header() {
 				  <AiOutlineClose onClick={Menu}/>
 				</li>
                 
-                <li><h4>Home</h4></li>
-                <li><h4>FEATURES</h4></li>
-                <li><h4>MEGA MENU</h4></li>
-                <li><h4>MEGA TUPS</h4></li>
-                <li><h4>SHORT</h4></li>
+                <li onClick={Menu}><h4>Home</h4></li>
+                <li onClick={Menu}><h4>FEATURES</h4></li>
+                <li onClick={Menu}><h4>MEGA MENU</h4></li>
+                <li onClick={Menu}><h4>MEGA TUPS</h4></li>
+                <li onClick={Menu}><h4>SHORT</h4></li>
             </ul>
 			:
 			<input placeholder="Search"/>
