@@ -67,3 +67,18 @@
 .content .rightContent svg:hover{
     color: var(--orange);
 }
+
+
+@media screen and (max-width:530px){
+    .leftContent span{
+        display: none !important;
+    }
+    .content .leftContent{
+        width: 80%;
+    }
+    .leftContent h5{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}

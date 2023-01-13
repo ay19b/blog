@@ -14,8 +14,9 @@
     font-size: 17px;
 }
 .footer .articlAside .item img {
-    width: 40%;
+    width: 5rem;
     height: 4rem;
+    object-fit: cover;
 }
 .footer .articlAside .item .itemCont h6{
     margin-bottom: 6px;
@@ -106,14 +107,15 @@
 }
 .iconSocial .icon{
     background-color: rgba(255,255,255,0.03);
-    padding: 4px;
+    padding: 5px;
     color: #e9e3e3;
     width: 26px;
     margin-right: 16px;
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 12px;
+    font-size: 24px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .icon:hover:nth-of-type(1){
     background-color: #3b5999;
@@ -129,4 +131,17 @@
 }
 .icon:hover:nth-of-type(5){
     background: red;
+}
+
+@media only screen and (max-width: 900px){
+    .contentFooter{
+        flex-direction: column;
+    }
+    .bottomFooter{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer .bottomFooter .about .head-footer{
+        display: none;
+    }
 }

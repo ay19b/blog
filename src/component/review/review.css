@@ -45,3 +45,10 @@
     color: #aaa;
     font-size: 13px;
 }
+
+
+@media only screen and (max-width: 680px){
+    .inf-review .item-rew{
+        width: 48%;
+    }
+}

@@ -3,11 +3,11 @@ import image1 from "../../images/p1.jpg"
 import image2 from "../../images/p2.jpg"
 import image3 from "../../images/p3.jpg"
 import image4 from "../../images/p4.jpg"
-import "./album.css"
+import "./feature.css"
 
-export default function Album() {
+export default function Feature() {
   return (
-    <section>
+    <section className='feature'>
         <div className="container">
             <div className='imageAlbum'>
                 <div className='leftAlbum'>

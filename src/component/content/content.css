@@ -1,12 +1,29 @@
-
-
 .inf-content{
     display: flex;
     justify-content: space-between;
+    margin-bottom:1.5rem;
 }
 .inf-content main{
     width: 69%;
 }
 .inf-content aside{
     width: 29%;
+}
+.inf-content .aside{
+    position: sticky;
+    top: 10px;
+}
+
+
+@media only screen and (max-width: 900px){
+    .inf-content {
+        flex-direction: column;
+    }
+    .inf-content main{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .inf-content aside {
+        width: 100%;
+    }
 }

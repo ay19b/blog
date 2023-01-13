@@ -18,18 +18,31 @@
     color: white;
     margin-bottom: 5px;
     font-size: 15px;
-    padding: 7px 7px;
+    padding: 9px 8px;
     border-radius: 2px;
+    cursor: pointer;
 }
 .item-social:nth-of-type(1){
     background-color: #3b5999;
 }
+.item-social:nth-of-type(1):hover{
+    background-color: #37528d;
+}
 .item-social:nth-of-type(2){
     background-color: #00acee;
+}
+.item-social:nth-of-type(2):hover{
+    background-color: #0aa5e2;
 }
 .item-social:nth-of-type(3){
     background-color: #f50000;
 }
+.item-social:nth-of-type(3):hover{
+    background-color: #e90b0b;
+}
 .item-social:nth-of-type(4){
     background: linear-gradient(15deg,#ffb13d,#dd277b,#4d5ed4);
+}
+.item-social:nth-of-type(4):hover{
+    background: linear-gradient(15deg,#e9a43d,#d12b78,#4454bb);
 }

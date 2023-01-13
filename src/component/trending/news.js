@@ -5,7 +5,8 @@ import './news.css'
 
 
 export default function News() {
-  const [text,setText] = useState();
+  const [text,setText] = useState('Apple Watch Series 5 is the Best One Yet By Consumer');
+  const [counter,setCounter] = useState(0);
   const news =[
     'Apple Watch Series 5 is the Best One Yet By Consumer',
     'Great Local Multiplayer Games to Play on PS5',
@@ -15,8 +16,37 @@ export default function News() {
     'Great Local Multiplayer Games to Play on PS5',
    ];
 
-  
+   const nextNews = () => {
+    setCounter(counter + 1)
+    setText(news[counter])
+  };
+
+  const prevNews = () => {
+    setCounter(counter - 1)
+    setText(news[counter])
+  };
+
+  if(counter>5){
+    setCounter(0)
+   }
+
+   if(counter<0){
+    setCounter(5)
+   }
+
    
+
+  useEffect(() => {
+    const intervalId = setInterval(()=>{
+      setCounter(counter+1)
+      setText(news[counter])
+    },3000)
+    return () => {
+      clearInterval(intervalId);
+    };
+  },)
+
+  
   return (
     <div className='news'>
       <div className='container'>
@@ -27,8 +57,8 @@ export default function News() {
                 <h5>{text}</h5>
             </div>
             <div className='rightContent'>
-              <MdOutlineKeyboardArrowLeft />
-              <MdOutlineKeyboardArrowRight />
+              <MdOutlineKeyboardArrowLeft onClick={prevNews}/>
+              <MdOutlineKeyboardArrowRight onClick={nextNews}/>
             </div>
         </div>
       </div>

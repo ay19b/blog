@@ -1,4 +1,4 @@
-import React from 'react'
+import {useRef} from 'react'
 import Review from '../review/review'
 import SocialMedia from '../socialMedia/socialMedia'
 import World from '../world/world'
@@ -10,19 +10,26 @@ import Category from '../category/category'
 
 
 export default function Content() {
+  const main = useRef();
+  const aside = useRef();
+
+  console.log(main.current)
+
   return (
     <section className='content'>
         <div className='container'>
             <div className='inf-content'>
-              <main>
+              <main ref={main}>
                  <World />
                  <Review />
                  <Category />
               </main>
-              <aside>
+              <aside ref={aside}>
+               <div className='aside'>
                  <SocialMedia />
                  <Popular />
                  <Comment />
+               </div> 
               </aside>
             </div>
         </div>

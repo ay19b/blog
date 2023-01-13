@@ -2,10 +2,9 @@
     display: flex;
     justify-content: space-between;
     flex: 1;
-    height: 40rem;
 }
 .category .articlAside .item img {
-    width: 45%;
+    width: 5rem;
 }
 .gadgets{
     flex: 0.48;
@@ -16,4 +15,13 @@
     flex: 0.48;
     background-color: var(--header-bg);
     padding: 20px;
+}
+
+@media only screen and (max-width: 680px){
+    .category{
+        flex-direction: column;
+    }
+    .category .gadgets{
+        margin-bottom: 1.5rem;
+    }
 }

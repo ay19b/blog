@@ -1,5 +1,8 @@
 import React from 'react'
 import image1 from "../../images/p1.jpg"
+import image2 from "../../images/p2.jpg"
+import image3 from "../../images/p3.jpg"
+import image4 from "../../images/p4.jpg"
 import './category.css'
 
 export default function Category() {
@@ -24,21 +27,21 @@ export default function Category() {
           </div>
           <div className='articlAside'>
           <div className='item'>
-            <img src={image1} />
+            <img src={image2} />
             <div className='itemCont'>
               <h6>How We Know Disinfectants Should Kill the Covid-19</h6>
               <span>August 02, 2021</span>
             </div>
           </div>
           <div className='item'>
-            <img src={image1} />
+            <img src={image3} />
             <div className='itemCont'>
               <h6>How We Know Disinfectants Should Kill the Covid-19</h6>
               <span>August 02, 2021</span>
             </div>
           </div>
           <div className='item'>
-            <img src={image1} />
+            <img src={image4} />
             <div className='itemCont'>
               <h6>How We Know Disinfectants Should Kill the Covid-19</h6>
               <span>August 02, 2021</span>
@@ -67,21 +70,21 @@ export default function Category() {
           </div>
           <div className='articlAside'>
           <div className='item'>
-            <img src={image1} />
+            <img src={image2} />
             <div className='itemCont'>
               <h6>How We Know Disinfectants Should Kill the Covid-19</h6>
               <span>August 02, 2021</span>
             </div>
           </div>
           <div className='item'>
-            <img src={image1} />
+            <img src={image3} />
             <div className='itemCont'>
               <h6>How We Know Disinfectants Should Kill the Covid-19</h6>
               <span>August 02, 2021</span>
             </div>
           </div>
           <div className='item'>
-            <img src={image1} />
+            <img src={image4} />
             <div className='itemCont'>
               <h6>How We Know Disinfectants Should Kill the Covid-19</h6>
               <span>August 02, 2021</span>

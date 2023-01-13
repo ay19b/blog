@@ -1,0 +1,19 @@
+.top-to-btm{
+  position: relative;
+}
+.icon-position{
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  z-index: 20;
+}
+.icon-style{
+  background-color: var(--orange);
+  height: 35px;
+  width: 35px;
+  color: #fff;
+  cursor: pointer;
+}
+.icon-style:hover{
+  background: #ce381a;
+}

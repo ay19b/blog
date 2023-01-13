@@ -22,6 +22,7 @@
 .worldMain img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .worldAside{
     width: 44%;
@@ -31,10 +32,9 @@
 }
 .worldAside .item{
     display: flex;
-    justify-content: space-between;
 }
 .worldAside .item img{
-    width: 44%;
+    width: 5rem;
     cursor: pointer;
 }
 .item img:hover{
@@ -55,4 +55,24 @@
 .itemCont span{
     color: #aaa;
     font-size: 12px;
+}
+
+
+
+@media only screen and (max-width: 680px){
+    .inf-world{
+        flex-direction: column;
+        height: auto;
+    }
+    .worldMain{
+        width: 100%;
+        height: 16rem;
+        margin-bottom: 16px;
+    }
+    .worldAside{
+        width: 100%;
+    }
+    .worldAside .item{
+        margin-bottom: 1rem;
+    }
 }

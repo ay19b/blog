@@ -1,6 +1,9 @@
 import React from 'react'
 import "./footer.css"
 import image1 from "../../images/p1.jpg"
+import image2 from "../../images/p2.jpg"
+import image3 from "../../images/p3.jpg"
+import i1 from '../../images/world/i1.jpg'
 import {MdFacebook} from 'react-icons/md'
 import {AiFillTwitterCircle,AiFillYoutube,AiOutlineInstagram} from "react-icons/ai"
 import {ImPinterest} from 'react-icons/im'
@@ -43,21 +46,21 @@ export default function Footer() {
                      <div className='item'>
                       <img src={image1} />
                       <div className='itemCont'>
-                      <h6>How We Know Disinfectants Should Kill the Covid-19</h6>
+                      <h6>11 of Best Laptops Evaluated Based on Budget</h6>
                       <span>August 02, 2021</span>
                     </div>
                 </div>
                 <div className='item'>
-                 <img src={image1} />
+                 <img src={image2} />
                  <div className='itemCont'>
-                  <h6>How We Know Disinfectants Should Kill the Covid-19</h6>
+                  <h6>Apple Watch Series 5 is the Best One Yet By Consumer</h6>
                   <span>August 02, 2021</span>
                  </div>
                 </div>
                 <div className='item'>
-                 <img src={image1} />
+                 <img src={image3} />
                  <div className='itemCont'>
-                  <h6>How We Know Disinfectants Should Kill the Covid-19</h6>
+                  <h6>Here’s What People Think of iOS 13 New Dark Mode</h6>
                   <span>August 02, 2021</span>
                  </div>
                 </div>
@@ -70,21 +73,21 @@ export default function Footer() {
                      <div className='item'>
                       <img src={image1} />
                       <div className='itemCont'>
-                      <h6>How We Know Disinfectants Should Kill the Covid-19</h6>
+                      <h6>11 of Best Laptops Evaluated Based on Budget</h6>
                       <span>August 02, 2021</span>
                     </div>
                     </div>
                     <div className='item'>
-                     <img src={image1} />
+                     <img src={i1} />
                      <div className='itemCont'>
-                      <h6>How We Know Disinfectants Should Kill the Covid-19</h6>
+                      <h6>How to Get COVID-19 Related Alerts on Your Phone</h6>
                      <span>August 02, 2021</span>
                     </div>
                    </div>
                    <div className='item'>
-                    <img src={image1} />
+                    <img src={image2} />
                     <div className='itemCont'>
-                     <h6>How We Know Disinfectants Should Kill the Covid-19</h6>
+                     <h6>Apple Watch Series 5 is the Best One Yet By Consumer</h6>
                      <span>August 02, 2021</span>
                    </div>
                   </div>

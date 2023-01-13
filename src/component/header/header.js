@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {MdFacebook,MdClose,MdMenu} from 'react-icons/md'
+import {MdFacebook,MdOutlineKeyboardArrowDown,MdMenu} from 'react-icons/md'
 import {AiFillTwitterCircle,AiFillYoutube,AiOutlineClose} from "react-icons/ai"
 import {ImPinterest} from 'react-icons/im'
 import {BiSearch} from 'react-icons/bi'
@@ -10,18 +10,42 @@ import "./header.css"
 export default function Header() {
 	const [text,setText] = useState(false);
 	const [menu,setMenu] = useState(false);
+  const [navbar, setNavbar] = useState(false);
 	
 	function change(){
-		if(text){setText(false)} 
-		else{setText(true)}
+		if(text){
+      setText(false)
+    } 
+		else{
+      setText(true)
+       setMenu(false)
+    }
 	}
 	function Menu(){
 		if(menu){setMenu(false)} 
-		else{setMenu(true)}
+		else{
+      setMenu(true)
+      setText(false)
+    }
 	}
+
+  const changeBackground=()=>{
+    if(window.scrollY>=5){
+      setNavbar(true)
+    }else{
+      setNavbar(false)
+    }
+  }
+
+  useEffect(() => {
+    changeBackground()
+    window.addEventListener('scroll',changeBackground) 
+    console.log(navbar)
+  })
+  
 	
   return (
-    <header>
+    <header className={navbar?'active':null}>
         <nav>
           <div className='container'>
             <div className='content'>
