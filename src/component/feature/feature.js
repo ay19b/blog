@@ -1,15 +1,27 @@
-import React from 'react'
+import React, { useState,useEffect } from 'react';
 import image1 from "../../images/p1.jpg"
 import image2 from "../../images/p2.jpg"
 import image3 from "../../images/p3.jpg"
 import image4 from "../../images/p4.jpg"
 import "./feature.css"
+import {ClipLoader} from 'react-spinners';
+
 
 export default function Feature() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      setLoading(true)
+    },1200)
+  })
+
   return (
     <section className='feature'>
         <div className="container">
             <div className='imageAlbum'>
+               {loading?
+                <>
                 <div className='leftAlbum'>
                     <img src={image1} />
                     <div className='overlay'>
@@ -51,9 +63,8 @@ export default function Feature() {
                         </div>  
                     </div>
                     </div>
-                   
-                   
                 </div>
+                </>:(<ClipLoader size={60} color={"var(--orange)"} />)}
             </div>
         </div>
     </section>

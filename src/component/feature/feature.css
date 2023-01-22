@@ -8,6 +8,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     height: 25rem;
+    align-items: center;
 }
 .imageAlbum .leftAlbum{
     width: 49.5%;
@@ -15,6 +16,9 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .imageAlbum .leftAlbum:hover img,
 .imageAlbum .rightAlbum .imageAlbm:hover img{
@@ -72,6 +76,10 @@
     height: 200px;
     position: relative;
     cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .imageAlbum .rightAlbum .imageAlbm:nth-of-type(1) { 
     grid-column: 1/3;
