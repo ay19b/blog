@@ -21,6 +21,7 @@
     align-items: center;
 }
 .imageAlbum .leftAlbum:hover img,
+.imageAlbum .rightAlbum .imageAlbm:hover .overlay,
 .imageAlbum .rightAlbum .imageAlbm:hover img{
     transform: scale(1.02,1.02);
 }
