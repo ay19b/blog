@@ -5,6 +5,7 @@ import {ImPinterest} from 'react-icons/im'
 import {BiSearch} from 'react-icons/bi'
 import Logo from '../../images/logo.png'
 import "./header.css"
+import { Link } from 'react-router-dom'
 
 
 export default function Header() {
@@ -70,17 +71,18 @@ export default function Header() {
 		  {!text?
 		  <div className='partMenu'>
 		     <MdMenu className="menu" onClick={Menu}/>
-			 <img src={Logo}/>
+         <img src={Logo}/>
 		  </div>
 		  :null
 		  }
 		  {!text?
 			<ul className={!menu?'close':null}>
 			    <li className="topListnav">
-				  <img src={Logo}/>
+				  <Link to="/">
+			       <img src={Logo}/>
+         </Link>
 				  <AiOutlineClose onClick={Menu}/>
 				</li>
-                
                 <li onClick={Menu}><h4>Home</h4></li>
                 <li onClick={Menu}><h4>FEATURES</h4></li>
                 <li onClick={Menu}><h4>MEGA MENU</h4></li>

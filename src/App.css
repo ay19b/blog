@@ -12,6 +12,9 @@
   height: 100%;
   position: relative;
 }
+a{
+  text-decoration: none;
+}
 body{
   background-color: var(--dark);
   font-family: 'Roboto', sans-serif;
