@@ -22,57 +22,55 @@ export default function Feature() {
         <div className="container">
             <div className='imageAlbum'>
                 <div className='leftAlbum'>
-                <Link to="/Laptop">
                     <img src={image1} />
+                    <Link to="/Laptop">
                     <div className='overlay'>
                         <div className='contentOverlay'>
                           <span>apple</span>
                           <h2>11 of Best Laptops Evaluated Based on Budget</h2>
                           <h5>by John Doe- August 02, 2021</h5>
-                        </div>  
+                        </div>                      
                     </div>
-                </Link>
-                </div>
-                
+                    </Link>
+                </div>              
                 <div className='rightAlbum'>               
-                    <div className='imageAlbm'>
-                    <Link to="/Watch">
+                    <div className='imageAlbm'>                  
                        <img src={image2} />
-                       <div className='overlay'>
+                       <Link to="/Watch">
+                       <div className='overlay'>                
                         <div className='contentOverlay'>
                           <span>laptops</span>
                           <h3>Apple Watch Series 5 is the Best One Yet By Consumer</h3>
                           <h5>August 02, 2021</h5>
                         </div>  
-                      </div>
+                      </div> 
                       </Link>
-                    </div>
-                    <Link to="/Ios">
+                    </div>  
                     <div className='imageAlbm'>                   
                        <img src={image3} />
-                       <div className='overlay'>
+                       <Link to="/Ios">
+                       <div className='overlay'> 
                         <div className='contentOverlay'>
                           <span>laptops</span>
                           <h3>Here’s What People Think of iOS 13 New Dark Mode</h3>
                           <h5>August 02, 2021</h5>
-                        </div>  
-                       </div>                       
-                    </div>
-                    </Link>
-                     <Link to="/Application">
+                        </div> 
+                       </div>  
+                       </Link>                  
+                    </div>                    
                       <div className='imageAlbm'>
                        <img src={image4} />
-                       <div className='overlay'>
+                       <Link to="/Application">
+                       <div className='overlay'>              
                         <div className='contentOverlay'>
                           <span>apple</span>
                           <h3>18 Practices for Building Responsive Web Applications</h3>
                           <h5>August 02, 2021</h5>
-                        </div>  
+                        </div> 
                        </div>
-                       </div>
-                    </Link>                 
+                       </Link>
+                       </div>              
                 </div>
-
             </div>
         </div>
     </section>

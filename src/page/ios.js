@@ -42,7 +42,7 @@ export default function Ios() {
                        <h5 className='home'>Home</h5>
                     </Link>
                     <AiOutlineRight style={{fontSize: "12px"}}/>   
-                    <h5 className='n-page'>Apple</h5>
+                    <h5 className='n-page'>Laptop</h5>
                   </div>
                   <div className='content-detail'>
                     <h1 className='title-detail'>Here’s What People Think of iOS 13 New Dark Mode</h1>
