@@ -18,7 +18,7 @@ export default function Feature() {
   const handleImageLoad = (index) => {
     setImageLoadings((prevLoadings) =>
       prevLoadings.map((loading, i) =>
-        i === index ? { ...loading, loading: true } : loading
+        i === index ? { ...loading, loading: true} : loading
       )
     );
   };
@@ -30,6 +30,7 @@ export default function Feature() {
                 <div className='leftAlbum'>
                     <img 
                       src={imageLoading[0].src}
+                      className='img'
                       alt=''
                       onLoad={() => handleImageLoad(0)}
                       style={{ display: imageLoading[0].loading ? 'block' : 'none' }} 
@@ -37,8 +38,7 @@ export default function Feature() {
                     {imageLoading[0].loading ? null : (
                     <Blurhash
                       hash="LlMjK@t,M_R5E1jERPRj*0-oadX8"
-                      width="100%"
-                      height="100%"
+                      className='img'
                     />
                     )}
                     <Link to="/Laptop">
@@ -55,6 +55,7 @@ export default function Feature() {
                     <div className='imageAlbm'>                  
                     <img 
                       src={imageLoading[1].src}
+                      className='img'
                       alt=''
                       onLoad={() => handleImageLoad(1)}
                       style={{ display: imageLoading[1].loading ? 'block' : 'none' }} 
@@ -62,8 +63,7 @@ export default function Feature() {
                     {imageLoading[1].loading ? null : (
                     <Blurhash
                       hash="LQH2i+xuNHxb.T.Twboe.9NGM{t7"
-                      width="100%"
-                      height="100%"
+                      className='img'
                     />
                     )}
                        <Link to="/Watch">
@@ -79,6 +79,7 @@ export default function Feature() {
                     <div className='imageAlbm'>                   
                     <img 
                       src={imageLoading[2].src}
+                      className='img'
                       alt=''
                       onLoad={() => handleImageLoad(2)}
                       style={{ display: imageLoading[2].loading ? 'block' : 'none' }} 
@@ -86,8 +87,7 @@ export default function Feature() {
                     {imageLoading[2].loading ? null : (
                     <Blurhash
                       hash="LlKAg0:%-8bv}nm,w^X8kUNItlRi"
-                      width="100%"
-                      height="100%"
+                      className='img'
                     />
                     )}
                        <Link to="/Ios">
@@ -103,15 +103,15 @@ export default function Feature() {
                       <div className='imageAlbm'>
                       <img 
                         src={imageLoading[3].src}
+                        className='img'
                         alt=''
                         onLoad={() => handleImageLoad(3)}
                         style={{ display: imageLoading[3].loading ? 'block' : 'none' }} 
                       />
-                      {imageLoading[3].loading ? null : (
+                      {imageLoading[3].loading? null : (
                       <Blurhash
                         hash="L9MaO+009Z8_?w%M_3?vSzDiR4^+"
-                        width="100%"
-                        height="100%"
+                        className='img'
                       />
                       )}
                        <Link to="/Application">

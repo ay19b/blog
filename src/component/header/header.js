@@ -71,7 +71,9 @@ export default function Header() {
 		  {!text?
 		  <div className='partMenu'>
 		     <MdMenu className="menu" onClick={Menu}/>
-         <img src={Logo}/>
+         <Link to="/">
+			       <img src={Logo}/>
+         </Link>
 		  </div>
 		  :null
 		  }
