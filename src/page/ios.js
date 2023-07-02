@@ -1,4 +1,4 @@
-import {useRef,useEffect} from 'react'
+import {useRef,useState,useEffect} from 'react'
 import Footer from '../component/footer/footer'
 import Header from '../component/header/header'
 import ScrollToTop from '../component/scroll/scroll'
@@ -18,11 +18,17 @@ import {Link,useLocation } from 'react-router-dom';
 import {BsFacebook,BsPinterest} from "react-icons/bs"
 import {BiLinkExternal} from "react-icons/bi"
 import {AiOutlineTwitter,AiFillYoutube,AiOutlineRight} from "react-icons/ai"
+import { Blurhash } from 'react-blurhash';
 
 export default function Ios() {
   const main = useRef();
   const aside = useRef();
   const location = useLocation();
+  const [loading, setLoading] = useState(false);
+
+  const handleImageLoad = () => {
+    setLoading(true);
+    };
 
   useEffect(() => {
     window.scrollTo(0,0);
@@ -55,7 +61,14 @@ export default function Ios() {
                         <FaComments />
                       </div>
                     </div>
-                    <img src={image3} className="image-detail"/>
+                    {!loading &&<Blurhash hash="LlKAg0:%-8bv}nm,w^X8kUNItlRi" className="image-detail" /> }
+                    <img
+                      src={image3}
+                      alt=''
+                      className="image-detail"
+                      onLoad={handleImageLoad}
+                      style={{ display: loading ? 'block' : 'none' }}
+                    />   
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         when an unknown printer took a galley of type and scrambled it to make a type
